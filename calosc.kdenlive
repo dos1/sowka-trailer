@@ -1,0 +1,391 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mlt title="Anonymous Submission" version="0.8.2" root="/media/3432b47d-aea0-4797-913e-98f7e34be032/synfig" LC_NUMERIC="pl_PL.UTF-8">
+ <profile width="640" display_aspect_den="9" colorspace="0" frame_rate_den="1" description="640x360 25fps" height="360" display_aspect_num="16" frame_rate_num="25" progressive="0" sample_aspect_num="1" sample_aspect_den="1"/>
+ <producer in="0" out="14999" id="black">
+  <property name="mlt_type">producer</property>
+  <property name="length">15000</property>
+  <property name="eof">pause</property>
+  <property name="resource">/media/3432b47d-aea0-4797-913e-98f7e34be032/kdenlive/20110811/black</property>
+  <property name="aspect_ratio">0</property>
+  <property name="mlt_service">colour</property>
+ </producer>
+ <playlist id="black_track">
+  <entry in="0" out="1275" producer="black"/>
+ </playlist>
+ <playlist id="playlist1"/>
+ <producer in="0" out="1253" id="2_5">
+  <property name="mlt_type">producer</property>
+  <property name="length">1254</property>
+  <property name="eof">pause</property>
+  <property name="resource">krolik/test3-poprawki/podklad.ogg</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">s16</property>
+  <property name="meta.media.0.codec.sample_rate">44100</property>
+  <property name="meta.media.0.codec.channels">2</property>
+  <property name="meta.media.0.codec.name">vorbis</property>
+  <property name="meta.media.0.codec.long_name">Vorbis</property>
+  <property name="meta.media.0.codec.bit_rate">192000</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.volume">1,000000</property>
+ </producer>
+ <playlist id="playlist2">
+  <blank length="7"/>
+  <entry in="0" out="1253" producer="2_5"/>
+ </playlist>
+ <producer in="0" out="1268" id="9">
+  <property name="mlt_type">producer</property>
+  <property name="length">1269</property>
+  <property name="eof">pause</property>
+  <property name="resource"/>
+  <property name="mlt_service">kdenlivetitle</property>
+  <property name="xmldata">&lt;kdenlivetitle width="640" height="360" out="125">
+ &lt;startviewport rect="0,0,640,360"/>
+ &lt;endviewport rect="0,0,640,360"/>
+ &lt;background color="0,0,0,255"/>
+&lt;/kdenlivetitle>
+</property>
+  <property name="force_reload">0</property>
+  <property name="meta.volume">1,000000</property>
+ </producer>
+ <playlist id="playlist3">
+  <blank length="7"/>
+  <entry in="0" out="1268" producer="9"/>
+ </playlist>
+ <producer in="0" out="286" id="slowmotion:18:1,13">
+  <property name="mlt_type">producer</property>
+  <property name="length">287</property>
+  <property name="eof">pause</property>
+  <property name="resource">sowkaisoweczka/test5-galazka/plaza.webm?1,13</property>
+  <property name="aspect_ratio">1,000000</property>
+  <property name="mlt_service">framebuffer</property>
+  <property name="strobe">1</property>
+ </producer>
+ <playlist id="playlist4">
+  <blank length="482"/>
+  <entry in="0" out="286" producer="slowmotion:18:1,13"/>
+ </playlist>
+ <producer in="0" out="180" id="slowmotion:3:1,1">
+  <property name="mlt_type">producer</property>
+  <property name="length">181</property>
+  <property name="eof">pause</property>
+  <property name="resource">rambo/done-skok/640/sowkarambo.webm?1,1</property>
+  <property name="aspect_ratio">1,000000</property>
+  <property name="mlt_service">framebuffer</property>
+ </producer>
+ <producer in="0" out="271" id="slowmotion:17:1,1">
+  <property name="mlt_type">producer</property>
+  <property name="length">272</property>
+  <property name="eof">pause</property>
+  <property name="resource">krolik/test5-sowkasoweczka/krolik.webm?1,1</property>
+  <property name="aspect_ratio">1,000000</property>
+  <property name="mlt_service">framebuffer</property>
+ </producer>
+ <producer in="0" out="362" id="slowmotion:20:1,1">
+  <property name="mlt_type">producer</property>
+  <property name="length">363</property>
+  <property name="eof">pause</property>
+  <property name="resource">sowkaband/test3/sowkaband.webm?1,1</property>
+  <property name="aspect_ratio">1,000000</property>
+  <property name="mlt_service">framebuffer</property>
+ </producer>
+ <producer in="0" out="138" id="8">
+  <property name="mlt_type">producer</property>
+  <property name="length">139</property>
+  <property name="eof">pause</property>
+  <property name="resource"/>
+  <property name="mlt_service">kdenlivetitle</property>
+  <property name="xmldata">&lt;kdenlivetitle width="640" height="360" out="125">
+ &lt;item z-index="0" type="QGraphicsTextItem">
+  &lt;position x="41,66666666666671" y="149,8333333333333">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="255,255,255,255" font-outline-color="0,0,0,255" font-pixel-size="40" font-italic="0" font-underline="0" font-weight="75" font="DejaVu Sans" font-outline="1">http://www.sowka.art.pl/&lt;/content>
+ &lt;/item>
+ &lt;startviewport rect="0,0,640,360"/>
+ &lt;endviewport rect="0,0,640,360"/>
+ &lt;background color="255,255,255,0"/>
+&lt;/kdenlivetitle>
+</property>
+  <property name="force_reload">0</property>
+  <property name="meta.volume">1,000000</property>
+ </producer>
+ <playlist id="playlist5">
+  <blank length="30"/>
+  <entry in="0" out="179" producer="slowmotion:3:1,1"/>
+  <entry in="0" out="271" producer="slowmotion:17:1,1"/>
+  <blank length="261"/>
+  <entry in="0" out="362" producer="slowmotion:20:1,1"/>
+  <entry in="1" out="138" producer="8">
+   <filter in="1" out="138" id="pan_zoom">
+    <property name="track">0</property>
+    <property name="background">colour:black</property>
+    <property name="mlt_type">filter</property>
+    <property name="mlt_service">affine</property>
+    <property name="kdenlive_id">pan_zoom</property>
+    <property name="tag">affine</property>
+    <property name="kdenlive_ix">1</property>
+    <property name="transition.geometry">0/0:640x360:100;137=-46/-21:717x403:100</property>
+   </filter>
+  </entry>
+ </playlist>
+ <producer in="0" out="124" id="16">
+  <property name="mlt_type">producer</property>
+  <property name="length">125</property>
+  <property name="eof">pause</property>
+  <property name="resource"/>
+  <property name="mlt_service">kdenlivetitle</property>
+  <property name="xmldata">&lt;kdenlivetitle width="640" height="360" out="125">
+ &lt;item z-index="0" type="QGraphicsTextItem">
+  &lt;position x="15" y="276,375">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="255,255,255,255" font-outline-color="0,0,0,255" font-pixel-size="55" font-italic="0" font-underline="0" font-weight="50" font="Miso" font-outline="0">Cotygodniowy komiks internetowy&lt;/content>
+ &lt;/item>
+ &lt;startviewport rect="0,0,640,360"/>
+ &lt;endviewport rect="0,0,640,360"/>
+ &lt;background color="0,0,0,0"/>
+&lt;/kdenlivetitle>
+</property>
+  <property name="force_reload">0</property>
+  <property name="meta.volume">1,000000</property>
+ </producer>
+ <playlist id="playlist0">
+  <blank length="1014"/>
+  <entry in="0" out="91" producer="16">
+   <filter out="11" id="fade_from_black">
+    <property name="track">0</property>
+    <property name="start">0</property>
+    <property name="mlt_type">filter</property>
+    <property name="mlt_service">brightness</property>
+    <property name="kdenlive_id">fade_from_black</property>
+    <property name="tag">brightness</property>
+    <property name="kdenlive_ix">1</property>
+    <property name="end">1</property>
+   </filter>
+  </entry>
+ </playlist>
+ <producer in="0" out="124" id="15">
+  <property name="mlt_type">producer</property>
+  <property name="length">125</property>
+  <property name="eof">pause</property>
+  <property name="resource"/>
+  <property name="mlt_service">kdenlivetitle</property>
+  <property name="xmldata">&lt;kdenlivetitle width="640" height="360" out="125">
+ &lt;item z-index="0" type="QGraphicsTextItem">
+  &lt;position x="189" y="-26,66666666666667">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="255,255,255,255" font-outline-color="0,0,0,255" font-pixel-size="81" font-italic="0" font-underline="0" font-weight="75" font="Shadows Into Light" font-outline="0">SÓWKA&lt;/content>
+ &lt;/item>
+ &lt;startviewport rect="0,0,640,360"/>
+ &lt;endviewport rect="0,0,640,360"/>
+ &lt;background color="0,0,0,0"/>
+&lt;/kdenlivetitle>
+</property>
+  <property name="force_reload">0</property>
+  <property name="meta.volume">1,000000</property>
+ </producer>
+ <playlist id="playlist6">
+  <blank length="1014"/>
+  <entry in="0" out="91" producer="15">
+   <filter out="11" id="filter0">
+    <property name="track">0</property>
+    <property name="start">0</property>
+    <property name="mlt_type">filter</property>
+    <property name="mlt_service">brightness</property>
+    <property name="kdenlive_id">fade_from_black</property>
+    <property name="tag">brightness</property>
+    <property name="kdenlive_ix">1</property>
+    <property name="end">1</property>
+   </filter>
+  </entry>
+ </playlist>
+ <tractor title="Anonymous Submission" global_feed="1" in="0" out="1275" id="maintractor">
+  <property name="meta.volume">1</property>
+  <track producer="black_track"/>
+  <track hide="video" producer="playlist1"/>
+  <track hide="video" producer="playlist2"/>
+  <track producer="playlist3"/>
+  <track producer="playlist4"/>
+  <track producer="playlist5"/>
+  <track producer="playlist0"/>
+  <track producer="playlist6"/>
+  <transition id="transition0">
+   <property name="a_track">1</property>
+   <property name="b_track">2</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">mix</property>
+   <property name="always_active">1</property>
+   <property name="combine">1</property>
+   <property name="internal_added">237</property>
+  </transition>
+  <transition id="transition1">
+   <property name="a_track">1</property>
+   <property name="b_track">3</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">mix</property>
+   <property name="always_active">1</property>
+   <property name="combine">1</property>
+   <property name="internal_added">237</property>
+  </transition>
+  <transition id="transition2">
+   <property name="a_track">1</property>
+   <property name="b_track">4</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">mix</property>
+   <property name="always_active">1</property>
+   <property name="combine">1</property>
+   <property name="internal_added">237</property>
+  </transition>
+  <transition id="transition3">
+   <property name="a_track">1</property>
+   <property name="b_track">5</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">mix</property>
+   <property name="always_active">1</property>
+   <property name="combine">1</property>
+   <property name="internal_added">237</property>
+  </transition>
+  <transition id="transition4">
+   <property name="a_track">1</property>
+   <property name="b_track">6</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">mix</property>
+   <property name="always_active">1</property>
+   <property name="internal_added">237</property>
+   <property name="combine">1</property>
+  </transition>
+  <transition id="transition5">
+   <property name="a_track">1</property>
+   <property name="b_track">7</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">mix</property>
+   <property name="always_active">1</property>
+   <property name="internal_added">237</property>
+   <property name="combine">1</property>
+  </transition>
+  <transition in="1014" out="1105" id="transition7">
+   <property name="a_track">5</property>
+   <property name="b_track">6</property>
+   <property name="start">0/0:100%x100%</property>
+   <property name="factory">loader</property>
+   <property name="aligned">1</property>
+   <property name="progressive">1</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">composite</property>
+   <property name="automatic">1</property>
+   <property name="kdenlive_id">composite</property>
+   <property name="force_track">0</property>
+   <property name="deinterlace">0</property>
+   <property name="distort">0</property>
+   <property name="fill">1</property>
+   <property name="geometry">0%/0%:100%x100%:100</property>
+   <property name="luma_invert">0</property>
+   <property name="operator">over</property>
+   <property name="softness">0</property>
+  </transition>
+  <transition in="1014" out="1105" id="transition8">
+   <property name="a_track">5</property>
+   <property name="b_track">7</property>
+   <property name="start">0/0:100%x100%</property>
+   <property name="factory">loader</property>
+   <property name="aligned">1</property>
+   <property name="progressive">1</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">composite</property>
+   <property name="automatic">1</property>
+   <property name="kdenlive_id">composite</property>
+   <property name="force_track">1</property>
+   <property name="deinterlace">0</property>
+   <property name="distort">0</property>
+   <property name="fill">1</property>
+   <property name="geometry">0%/0%:100%x100%:100</property>
+   <property name="luma_invert">0</property>
+   <property name="operator">over</property>
+   <property name="softness">0</property>
+  </transition>
+  <transition in="1106" out="1243" id="transition9">
+   <property name="a_track">4</property>
+   <property name="b_track">5</property>
+   <property name="start">0/0:100%x100%</property>
+   <property name="factory">loader</property>
+   <property name="aligned">1</property>
+   <property name="progressive">1</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">composite</property>
+   <property name="automatic">1</property>
+   <property name="kdenlive_id">composite</property>
+   <property name="force_track">0</property>
+   <property name="deinterlace">0</property>
+   <property name="distort">0</property>
+   <property name="fill">1</property>
+   <property name="geometry">0%/0%:100%x100%:100</property>
+   <property name="luma_invert">0</property>
+   <property name="operator">over</property>
+   <property name="softness">0</property>
+   <property name="luma"/>
+  </transition>
+  <transition in="743" out="768" id="transition6">
+   <property name="a_track">4</property>
+   <property name="b_track">5</property>
+   <property name="start"/>
+   <property name="factory">loader</property>
+   <property name="aligned">0</property>
+   <property name="progressive">1</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">composite</property>
+   <property name="automatic">1</property>
+   <property name="kdenlive_id">slide</property>
+   <property name="force_track">1</property>
+   <property name="deinterlace">0</property>
+   <property name="distort"/>
+   <property name="fill"/>
+   <property name="geometry">-100%/0%:100%x100%:60;-1=0%/0%:100%x100%:100</property>
+   <property name="luma_invert"/>
+   <property name="operator"/>
+   <property name="softness"/>
+   <property name="invert">0</property>
+  </transition>
+ </tractor>
+ <kdenlivedoc profile="/home/dos/.kde/share/apps/kdenlive/profiles/customprofile11" kdenliveversion="0.9.2" version="0,88" projectfolder="/home/dos/kdenlive">
+  <customeffects/>
+  <documentproperties documentid="1313087486674" renderdestination="" renderrescalewidth="320" proxyextension="ts" generateproxy="0" proxyimageminsize="2000" rendertctype="0" verticalzoom="1" renderprofile="WebM 12000k" renderrescaleheight="240" zonein="1054" renderrescale="0" renderscanning="1" renderurl="/media/3432b47d-aea0-4797-913e-98f7e34be032/synfig/calosc.webm" rendertwopass="0" renderplay="0" position="926" proxyminsize="1000" renderstartguide="-1" zoom="4" renderratio="0" rendercategory="WebM" zoneout="1154" renderzone="0" renderendguide="-1" renderexportaudio="0" proxyparams="-f mpegts -acodec libmp3lame -ac 2 -ab 92k -ar 48000 -vcodec mpeg2video -g 5 -deinterlace -s 480x270 -b 150k" enableproxy="0" generateimageproxy="0" renderguide="0" rendertcoverlay="0"/>
+  <documentmetadata/>
+  <documentnotes>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'DejaVu Sans'; font-size:8pt; font-weight:400; font-style:normal;">
+&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;br />&lt;/p>&lt;/body>&lt;/html></documentnotes>
+  <profileinfo width="640" display_aspect_den="9" frame_rate_den="1" description="640x360 25fps" height="360" frame_rate_num="25" display_aspect_num="16" progressive="0" sample_aspect_num="1" sample_aspect_den="1"/>
+  <tracksinfo>
+   <trackinfo blind="1" mute="0" locked="0" trackname="Audio 2" type="audio"/>
+   <trackinfo blind="1" mute="0" locked="0" trackname="Audio 1" type="audio"/>
+   <trackinfo blind="0" mute="0" locked="0" trackname="Video 5"/>
+   <trackinfo blind="0" mute="0" locked="0" trackname="Video 4"/>
+   <trackinfo blind="0" mute="0" locked="0" trackname="Video 3"/>
+   <trackinfo blind="0" mute="0" locked="0" trackname="Video 2"/>
+   <trackinfo blind="0" mute="0" locked="0" trackname="Video 1"/>
+  </tracksinfo>
+  <kdenlive_producer audiocodec="Vorbis" channels="2" duration="1254" frame_size="640x360" frequency="44100" file_size="883113" aspect_ratio="0,000000" file_hash="56be8d7c968749f9ef3deb00dde861ed" type="1" id="2" name="podklad.ogg" resource="/media/3432b47d-aea0-4797-913e-98f7e34be032/synfig/krolik/test3-poprawki/podklad.ogg"/>
+  <kdenlive_producer audio_max="0" id="3" pix_fmt="yuv420p" default_video="0" fps="25" name="sowkarambo.webm" colorspace="601" videocodec="On2 VP8" resource="/media/3432b47d-aea0-4797-913e-98f7e34be032/synfig/rambo/done-skok/640/sowkarambo.webm" default_audio="-1" duration="200" file_hash="97beeb27dbfc62329856b77bc9fb028a" aspect_ratio="1,000000" channels="0" frequency="0" video_max="0" type="2" frame_size="640x360" file_size="1922537"/>
+  <kdenlive_producer audio_max="0" id="4" default_video="0" xmldata="&lt;kdenlivetitle width=&quot;640&quot; height=&quot;360&quot; out=&quot;125&quot;>&#xa; &lt;startviewport rect=&quot;0,0,640,360&quot;/>&#xa; &lt;endviewport rect=&quot;0,0,640,360&quot;/>&#xa; &lt;background color=&quot;255,255,255,255&quot;/>&#xa;&lt;/kdenlivetitle>&#xa;" name="Klip tytułowy" in="0" thumbnail="100" transparency="1" default_audio="0" duration="125" aspect_ratio="0,000000" channels="0" frequency="0" out="125" video_max="0" progressive="0" type="6" frame_size="640x360"/>
+  <kdenlive_producer audio_max="0" channels="0" duration="125" transparency="1" default_audio="0" video_max="0" frame_size="640x360" frequency="0" in="0" aspect_ratio="0,000000" out="125" xmldata="&lt;kdenlivetitle width=&quot;640&quot; height=&quot;360&quot; out=&quot;125&quot;>&#xa; &lt;item z-index=&quot;0&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;172,9166666666667&quot; y=&quot;45,62500000000001&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-outline-color=&quot;0,0,0,255&quot; font-pixel-size=&quot;66&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;75&quot; font=&quot;DejaVu Sans&quot; font-outline=&quot;1&quot;>SÓWKA&lt;/content>&#xa; &lt;/item>&#xa; &lt;startviewport rect=&quot;0,0,640,360&quot;/>&#xa; &lt;endviewport rect=&quot;0,0,640,360&quot;/>&#xa; &lt;background color=&quot;255,255,255,0&quot;/>&#xa;&lt;/kdenlivetitle>&#xa;" type="6" id="5" name="Klip tytułowy" progressive="0" default_video="0"/>
+  <kdenlive_producer audio_max="0" channels="0" duration="125" transparency="1" default_audio="0" video_max="0" frame_size="640x360" frequency="0" in="0" aspect_ratio="0,000000" out="125" xmldata="&lt;kdenlivetitle width=&quot;640&quot; height=&quot;360&quot; out=&quot;125&quot;>&#xa; &lt;item z-index=&quot;0&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;70,83333333333334&quot; y=&quot;209,2083333333334&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-outline-color=&quot;0,0,0,255&quot; font-pixel-size=&quot;43&quot; font-italic=&quot;0&quot; alignment=&quot;4&quot; font-underline=&quot;0&quot; font-weight=&quot;75&quot; font=&quot;DejaVu Sans&quot; font-outline=&quot;1&quot;>Cotygodniowy&#xa;komiks internetowy&lt;/content>&#xa; &lt;/item>&#xa; &lt;startviewport rect=&quot;0,0,640,360&quot;/>&#xa; &lt;endviewport rect=&quot;0,0,640,360&quot;/>&#xa; &lt;background color=&quot;255,255,255,0&quot;/>&#xa;&lt;/kdenlivetitle>&#xa;" type="6" id="7" name="Klip tytułowy" progressive="0" default_video="0"/>
+  <kdenlive_producer audio_max="0" channels="0" duration="125" transparency="1" default_audio="0" video_max="0" frame_size="640x360" frequency="0" in="0" aspect_ratio="0,000000" out="125" xmldata="&lt;kdenlivetitle width=&quot;640&quot; height=&quot;360&quot; out=&quot;125&quot;>&#xa; &lt;item z-index=&quot;0&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;41,66666666666671&quot; y=&quot;149,8333333333333&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-outline-color=&quot;0,0,0,255&quot; font-pixel-size=&quot;40&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;75&quot; font=&quot;DejaVu Sans&quot; font-outline=&quot;1&quot;>http://www.sowka.art.pl/&lt;/content>&#xa; &lt;/item>&#xa; &lt;startviewport rect=&quot;0,0,640,360&quot;/>&#xa; &lt;endviewport rect=&quot;0,0,640,360&quot;/>&#xa; &lt;background color=&quot;255,255,255,0&quot;/>&#xa;&lt;/kdenlivetitle>&#xa;" type="6" id="8" name="Klip tytułowy" default_video="0"/>
+  <kdenlive_producer audio_max="0" channels="0" duration="125" transparency="1" default_audio="0" video_max="0" frame_size="640x360" frequency="0" in="0" aspect_ratio="0,000000" out="125" xmldata="&lt;kdenlivetitle width=&quot;640&quot; height=&quot;360&quot; out=&quot;125&quot;>&#xa; &lt;startviewport rect=&quot;0,0,640,360&quot;/>&#xa; &lt;endviewport rect=&quot;0,0,640,360&quot;/>&#xa; &lt;background color=&quot;0,0,0,255&quot;/>&#xa;&lt;/kdenlivetitle>&#xa;" type="6" id="9" name="Klip tytułowy" default_video="0"/>
+  <kdenlive_producer audio_max="0" id="11" pix_fmt="yuv420p" default_video="0" fps="25" name="plaza.webm" colorspace="601" videocodec="On2 VP8" resource="/media/3432b47d-aea0-4797-913e-98f7e34be032/synfig/sowkaisoweczka/test4-rzeski/plaza.webm" default_audio="-1" duration="325" file_hash="be2ce716754beda1d3e636f58fe063a2" aspect_ratio="1,000000" channels="0" frequency="0" video_max="0" type="2" frame_size="640x360" file_size="2006082"/>
+  <kdenlive_producer audio_max="0" id="12" pix_fmt="yuv420p" default_video="0" fps="25" name="krolik.webm" colorspace="601" videocodec="On2 VP8" resource="/media/3432b47d-aea0-4797-913e-98f7e34be032/synfig/krolik/test4-poprawki/krolik.webm" default_audio="-1" duration="300" file_hash="9bd2af0a9fafd32b3f72e12671332662" aspect_ratio="1,000000" channels="0" frequency="0" video_max="0" type="2" frame_size="640x360" file_size="2921555"/>
+  <kdenlive_producer audio_max="0" channels="0" duration="125" transparency="1" default_audio="0" video_max="0" frame_size="640x360" frequency="0" in="0" aspect_ratio="0,000000" out="125" xmldata="&lt;kdenlivetitle width=&quot;640&quot; height=&quot;360&quot; out=&quot;125&quot;>&#xa; &lt;item z-index=&quot;0&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;189&quot; y=&quot;-26,66666666666667&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-outline-color=&quot;0,0,0,255&quot; font-pixel-size=&quot;81&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;75&quot; font=&quot;Shadows Into Light&quot; font-outline=&quot;0&quot;>SÓWKA&lt;/content>&#xa; &lt;/item>&#xa; &lt;startviewport rect=&quot;0,0,640,360&quot;/>&#xa; &lt;endviewport rect=&quot;0,0,640,360&quot;/>&#xa; &lt;background color=&quot;0,0,0,0&quot;/>&#xa;&lt;/kdenlivetitle>&#xa;" type="6" id="15" name="Klip tytułowy" default_video="0"/>
+  <kdenlive_producer audio_max="0" channels="0" duration="125" transparency="1" default_audio="0" video_max="0" frame_size="640x360" frequency="0" in="0" aspect_ratio="0,000000" out="125" xmldata="&lt;kdenlivetitle width=&quot;640&quot; height=&quot;360&quot; out=&quot;125&quot;>&#xa; &lt;item z-index=&quot;0&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;15&quot; y=&quot;276,375&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-outline-color=&quot;0,0,0,255&quot; font-pixel-size=&quot;55&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;50&quot; font=&quot;Miso&quot; font-outline=&quot;0&quot;>Cotygodniowy komiks internetowy&lt;/content>&#xa; &lt;/item>&#xa; &lt;startviewport rect=&quot;0,0,640,360&quot;/>&#xa; &lt;endviewport rect=&quot;0,0,640,360&quot;/>&#xa; &lt;background color=&quot;0,0,0,0&quot;/>&#xa;&lt;/kdenlivetitle>&#xa;" type="6" id="16" name="Klip tytułowy" default_video="0"/>
+  <kdenlive_producer audio_max="0" id="17" pix_fmt="yuv420p" default_video="0" fps="25" name="krolik.webm" colorspace="601" videocodec="On2 VP8" resource="/media/3432b47d-aea0-4797-913e-98f7e34be032/synfig/krolik/test5-sowkasoweczka/krolik.webm" default_audio="-1" duration="300" file_hash="fa2088418aae08f2748c0efc0792b75e" aspect_ratio="1,000000" channels="0" frequency="0" video_max="0" type="2" frame_size="640x360" file_size="3040298"/>
+  <kdenlive_producer audio_max="0" id="18" pix_fmt="yuv420p" default_video="0" fps="25" name="plaza.webm" colorspace="601" videocodec="On2 VP8" resource="/media/3432b47d-aea0-4797-913e-98f7e34be032/synfig/sowkaisoweczka/test5-galazka/plaza.webm" default_audio="-1" duration="325" file_hash="f0c73da595da07534a7c63b9a4569ee6" aspect_ratio="1,000000" channels="0" frequency="0" video_max="0" type="2" frame_size="640x360" file_size="2179011"/>
+  <kdenlive_producer audio_max="0" id="19" pix_fmt="yuv420p" default_video="0" fps="25" name="sowkaband.webm" colorspace="601" videocodec="On2 VP8" resource="/media/3432b47d-aea0-4797-913e-98f7e34be032/synfig/sowkaband/test2/sowkaband.webm" default_audio="-1" duration="400" file_hash="b998fbff239fedd0849bf1a2a17ebbb2" aspect_ratio="1,000000" channels="0" frequency="0" video_max="0" type="2" frame_size="640x360" file_size="3540380"/>
+  <kdenlive_producer audio_max="0" id="20" pix_fmt="yuv420p" default_video="0" fps="25" name="sowkaband.webm" colorspace="601" videocodec="On2 VP8" resource="/media/3432b47d-aea0-4797-913e-98f7e34be032/synfig/sowkaband/test3/sowkaband.webm" default_audio="-1" duration="400" file_hash="5bfd8d7605f36372945d46ce9af667b2" aspect_ratio="1,000000" channels="0" frequency="0" video_max="0" type="2" frame_size="640x360" file_size="3555894"/>
+  <markers/>
+  <groups/>
+ </kdenlivedoc>
+</mlt>
